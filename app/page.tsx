@@ -1,17 +1,15 @@
 import Image from "next/image";
 import hero from "assets/Hero-2.png";
 import Header from "@/components/Header";
+import Headline from "@/components/Headline";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <Image
-        src={hero}
-        className="top-0 fixed w-full h-80 -z-50"
-        alt="Chamba Valley Tomatoes"
-      />
-      <h1>This is my site</h1>
+      <Headline />
+      <Hero />
     </main>
   );
 }
