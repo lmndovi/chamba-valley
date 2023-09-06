@@ -2,21 +2,25 @@ import React from "react";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 import Image from "next/image";
-import hero from "assets/Hero-2.png";
+import hero from "assets/hero.png";
+import Headline from "./Headline";
 
 const Header = () => {
   return (
-    <div>
-      <div className="flex items-center justify-between p-5">
-        <Logo />
-        <Navbar />
-      </div>
-      <div>
-        <Image
-          src={hero}
-          className="top-0 fixed w-full h-80 -z-50"
-          alt="Chamba Valley Tomatoes"
-        />
+    <div className="">
+      <Image
+        src={hero}
+        className="w-full h-80 -z-20"
+        alt="Chamba Valley Tomatoes"
+      />
+      <div className="absolute top-0 left-0 w-full">
+        <div className="flex justify-between p-5  items-center">
+          <Logo />
+          <Navbar />
+        </div>
+        <div>
+          <Headline />
+        </div>
       </div>
     </div>
   );
