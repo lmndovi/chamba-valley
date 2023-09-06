@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Headline = () => {
@@ -15,9 +16,11 @@ const Headline = () => {
         </h1>
       </header>
       <div>
-        <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs">
-          This Week's Stock
-        </button>
+        <Link href="/stock">
+          <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs">
+            This Week's Stock
+          </button>
+        </Link>
       </div>
     </section>
   );
