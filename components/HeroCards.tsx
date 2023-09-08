@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import tomato from "assets/tomato.png";
+import Link from "next/link";
 
 const HeroCards = () => {
   return (
@@ -33,9 +34,11 @@ const HeroCards = () => {
       </div>
 
       <div>
-        <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs">
-          Learn More
-        </button>
+        <Link href="/about">
+          <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs">
+            Learn More
+          </button>
+        </Link>
       </div>
     </div>
   );
