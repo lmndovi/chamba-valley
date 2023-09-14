@@ -15,7 +15,7 @@ const Navbar = () => {
           href="/about"
           className=" hover:underline hover:decoration-4 hover:decoration-[#DC0D0D] hover:underline-offset-4"
         >
-          <li>About Us</li>
+          <li>About</li>
         </Link>
         <Link
           href="/stock"

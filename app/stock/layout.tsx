@@ -1,3 +1,5 @@
+import Logo from "@/components/Logo";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +14,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="">{children}</body>
+      <body className="">
+        <div>
+          <div className="flex justify-between p-5  items-center">
+            <Logo />
+            <Navbar />
+          </div>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

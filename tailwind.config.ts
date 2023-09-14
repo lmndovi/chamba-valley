@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        "tomato-field": "url('../assets/tomato-field.jpg')",
+      },
     },
   },
   plugins: [],

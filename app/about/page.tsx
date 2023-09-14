@@ -5,13 +5,13 @@ import veg from "@/assets/veg-2.jpg";
 
 const about = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 p-5 md:gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 p-6 md:pt-28 md:gap-2">
       <div className="p-4">
         <div className="flex flex-col  p-5 space-y-3">
           <div className="">
             <h2 className="font-bold uppercase text-xs">About Us</h2>
             <h1 className="uppercase text-xl font-light">See What We Sell</h1>
-            <h1 className="text-[#DC0D0D] uppercase font-bold text-xl">
+            <h1 className="text-[#DC0D0D] uppercase font-bold text-xl -ml-1">
               "Healthy Tomatoes"
             </h1>
           </div>
@@ -41,7 +41,7 @@ const about = () => {
         </div>
       </div>
       <div className="p-4">
-        <Image src={veg} alt="Vegetables" className="rounded-md h-96 w-fit" />
+        <Image src={veg} alt="Vegetables" className="rounded-lg h-96 w-fit" />
       </div>
     </div>
   );
