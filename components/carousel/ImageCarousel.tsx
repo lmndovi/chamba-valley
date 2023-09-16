@@ -14,6 +14,9 @@ import "./styles.css";
 // import required modules
 import { Keyboard, Pagination, Navigation } from "swiper/modules";
 
+// Import the images and types from the 'images.ts' file
+import { images, Image } from "@/images"; // Adjust the import path
+
 export default function ImageCarousel() {
   return (
     <>
@@ -30,15 +33,11 @@ export default function ImageCarousel() {
         modules={[Keyboard, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {images.map((image: Image) => (
+          <SwiperSlide key={image.id}>
+            <img src={image.path} alt={image.alt} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

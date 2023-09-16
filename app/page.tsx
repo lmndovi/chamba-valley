@@ -1,5 +1,3 @@
-import Image from "next/image";
-import hero from "assets/Hero-2.png";
 import Header from "@/components/Header";
 
 import Hero from "@/components/Hero";

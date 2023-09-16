@@ -4,7 +4,7 @@ import ImageCarousel from "@/components/carousel/ImageCarousel";
 
 const gallery = () => {
   return (
-    <div className="-3 h-full">
+    <div className=" h-full">
       <ImageCarousel />
     </div>
   );
