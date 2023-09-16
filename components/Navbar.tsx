@@ -23,6 +23,12 @@ const Navbar = () => {
         >
           <li>Stock</li>
         </Link>
+        <Link
+          href="/gallery"
+          className=" hover:underline hover:decoration-4 hover:decoration-[#DC0D0D] hover:underline-offset-4"
+        >
+          <li>Gallery</li>
+        </Link>
         <Link href="/contact">
           <button className="bg-red-600 px-3 py-1 rounded-xl text-white">
             Contact

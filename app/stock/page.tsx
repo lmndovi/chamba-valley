@@ -3,13 +3,13 @@ import React from "react";
 
 const stock = () => {
   return (
-    <div className="bg-tomato-field h-52 w-full bg-cover -z-50 mt-48">
-      <main className=" bg-[#161616] h-[480px] w-80 mx-auto rounded-t-3xl bg-opacity-90 text-white ml-52 ">
+    <div className="bg-tomato-field h-72 w-full bg-cover -z-50 mt-40 pt-10">
+      <main className=" bg-[#161616] h-[480px] w-80 mx-auto rounded-t-3xl bg-opacity-90 text-white ml-72 ">
         <div className="p-10 uppercase">
           <h2 className="font-bold text-xs">Stock</h2>
           <h1 className="text-2xl font-bold">
-            What's In This <br />
-            <span className=" font-thin">Week?</span>
+            What is In <br />
+            <span className=" font-thin">Season?</span>
           </h1>
           <section className="pt-10">
             <ul className="flex flex-col space-y-2 font-semibold text-lg">
