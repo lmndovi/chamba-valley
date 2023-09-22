@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "tomato-field": "url('../assets/tomato-field.jpg')",
+        "black-board": "url('../assets/blackboard.avif')",
       },
     },
   },

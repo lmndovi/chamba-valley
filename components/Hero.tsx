@@ -1,5 +1,7 @@
 import React from "react";
 import HeroCards from "./HeroCards";
+import ImageCarousel from "./carousel/ImageCarousel";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -22,8 +24,15 @@ const Hero = () => {
           farming
         </p>
       </div>
-      <div className="py-12">
-        <HeroCards />
+      <div className="flex flex-col mx-auto py-10 h-96 w-[500px]">
+        <ImageCarousel />
+      </div>
+      <div>
+        <Link href="/about">
+          <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs -mt-20">
+            Learn More
+          </button>
+        </Link>
       </div>
     </div>
   );

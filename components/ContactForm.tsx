@@ -92,7 +92,7 @@ const ContactForm = () => {
       {/* Form */}
       <form onSubmit={handleSubmit}>
         <label className=" flex text-lg mt-5">
-          <h2 className="mr-16">Name: </h2>
+          <h2 className="mr-[70px]">Name: </h2>
 
           <input
             placeholder="John Doe"
@@ -120,7 +120,7 @@ const ContactForm = () => {
         </label>
 
         <label className=" flex text-lg mt-5">
-          <h2 className="mr-9">Message: </h2>
+          <h2 className="mr-10">Message: </h2>
 
           <input
             placeholder="Type your message here"

@@ -16,6 +16,7 @@ import { Keyboard, Pagination, Navigation } from "swiper/modules";
 
 // Import the images and types from the 'images.ts' file
 import { images, Image } from "@/images"; // Adjust the import path
+import Link from "next/link";
 
 export default function ImageCarousel() {
   return (
@@ -31,7 +32,7 @@ export default function ImageCarousel() {
         }}
         navigation={true}
         modules={[Keyboard, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper rounded-2xl"
       >
         {images.map((image: Image) => (
           <SwiperSlide key={image.id}>
