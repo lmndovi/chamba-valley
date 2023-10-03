@@ -1,5 +1,6 @@
 // pages/shop.tsx
 
+import CropList from "@/components/CropList";
 import VegetableList from "@/components/VegetableList";
 import React from "react";
 
@@ -14,10 +15,29 @@ const vegetables = [
   { name: "Lettuce", price: 1500.29, iconPath: "/lettuce.svg" },
 ];
 
+const crops = [
+  {
+    name: "Papaya",
+    harvestDate: new Date("2023-10-15"),
+    iconPath: "/papaya.svg",
+  },
+  {
+    name: "Avocadoes",
+    harvestDate: new Date("2023-11-18"),
+    iconPath: "/avocado.svg",
+  },
+  {
+    name: "Mango",
+    harvestDate: new Date("2023-12-23"),
+    iconPath: "/mango.svg",
+  },
+];
+
 const ShopPage: React.FC = () => {
   return (
-    <div className="container mx-auto p-4 mt-10">
+    <div className="container flex flex-col space-y-8 mx-auto p-4 mt-10 bg-black-board bg-cover px-5 py-20 rounded-xl border-8 border-solid border-[#CAA472]">
       <VegetableList vegetables={vegetables} />
+      <CropList crops={crops} />
     </div>
   );
 };

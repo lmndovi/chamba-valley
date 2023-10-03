@@ -10,11 +10,11 @@ const Header = () => {
     <div className="">
       <Image
         src={hero}
-        className="w-full h-80 -z-20"
+        className="w-full h-96 -z-20"
         alt="Chamba Valley Tomatoes"
       />
       <div className="absolute top-0 left-0 w-full">
-        <div className="flex justify-between p-5  items-center">
+        <div className="md:flex-row md:justify-between md:p-5  md:items-center flex flex-col  bg-opacity-50 pb">
           <Logo />
           <Navbar />
         </div>
