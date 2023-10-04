@@ -1,15 +1,14 @@
-import React from "react";
+"use client";
+
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import { IsOpenProvider } from "@/components/Context";
-
+import { useState } from "react";
 export default function Home() {
   return (
-    <IsOpenProvider>
-      <main className="">
-        <Header />
-        <Hero />
-      </main>
-    </IsOpenProvider>
+    <main className="">
+      <Header />
+
+      <Hero />
+    </main>
   );
 }

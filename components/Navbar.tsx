@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import React, { useState } from "react";
 import NavButton from "./NavButton";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useIsOpen } from "@/components/Context"; // Import the context
 
 const Navbar = () => {
   const Links = [
@@ -14,7 +13,7 @@ const Navbar = () => {
     { name: "About", link: "/about" },
   ];
 
-  const { isOpen, setIsOpen } = useIsOpen(); // Access the context
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
