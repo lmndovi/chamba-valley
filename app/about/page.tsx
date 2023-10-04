@@ -43,12 +43,20 @@ const about = () => {
             </Link>
           </div>
         </div>
-        <div className="p-4">
+        <div className="p-4 col-span-1 md:max-w-[550px]">
           <Image src={veg} alt="Vegetables" className="rounded-lg h-96 w-fit" />
         </div>
       </div>
-      <div className="flex flex-col mx-auto py-10 h-96 w-[500px]">
-        <HeroCards />
+      <div className="flex flex-col mx-auto py-10 h-96 w-96 space-y-5">
+        <h1 className="uppercase text-xl font-medium text-center text-[#dc0d0d]">
+          Community Service
+        </h1>
+        <p className="text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          cumque delectus, eligendi nulla obcaecati maiores soluta, libero quas
+          explicabo deserunt consectetur in eos ipsum veritatis! Reiciendis
+          accusantium iste doloribus excepturi.
+        </p>
       </div>
     </div>
   );

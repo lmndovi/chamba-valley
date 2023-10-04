@@ -91,8 +91,8 @@ const ContactForm = () => {
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
-        <label className=" flex text-lg mt-5">
-          <h2 className="mr-[70px]">Name: </h2>
+        <label className=" flex justify-between text-lg mt-5">
+          <h2 className="mr-10 w-36">Name: </h2>
 
           <input
             placeholder="John Doe"
@@ -105,8 +105,8 @@ const ContactForm = () => {
           />
         </label>
 
-        <label className=" flex text-lg mt-5">
-          <h2 className="mr-3">Phone (WhatsApp): </h2>
+        <label className=" flex justify-between text-lg mt-5">
+          <h2 className="mr-5">Phone (WhatsApp): </h2>
 
           <input
             placeholder="+260 97 5818744"
@@ -119,8 +119,8 @@ const ContactForm = () => {
           />
         </label>
 
-        <label className=" flex text-lg mt-5">
-          <h2 className="mr-10">Message: </h2>
+        <label className=" flex  justify-between text-lg mt-5">
+          <h2 className="mr-5">Message: </h2>
 
           <input
             placeholder="Type your message here"
@@ -135,7 +135,7 @@ const ContactForm = () => {
 
         <div className="flex  justify-center my-20">
           <button
-            className="px-5 py-2 bg-red-600 text-lg font-bold mb-3 text-white rounded-lg font-sans border-2 border-[#C4F6D1]"
+            className="px-5 py-2 bg-[#dc0d0d] bg-opacity-80 text-lg font-bold mb-3 text-white rounded-lg font-sans border-2 border-[#C4F6D1]"
             type="submit"
           >
             Submit

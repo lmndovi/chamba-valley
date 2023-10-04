@@ -35,7 +35,7 @@ const crops = [
 
 const ShopPage: React.FC = () => {
   return (
-    <div className="container flex flex-col space-y-8 mx-auto p-4 mt-10 bg-black-board bg-cover px-5 py-20 rounded-xl border-8 border-solid border-[#CAA472]">
+    <div className="container flex flex-col space-y-8 mx-auto p-4 mt-28 mb-12 bg-black-board bg-cover px-5 py-20 rounded-xl border-8 border-solid border-[#CAA472] w-[500px] md:w-[700px]">
       <VegetableList vegetables={vegetables} />
       <CropList crops={crops} />
     </div>
