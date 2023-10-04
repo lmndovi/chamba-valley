@@ -24,7 +24,7 @@ const Hero = () => {
           farming
         </p>
       </div>
-      <div className="flex flex-col mx-auto py-10 h-96 w-[500px]">
+      <div className="flex flex-col mx-auto py-10 h-96 w-full">
         <ImageCarousel />
       </div>
       <div>

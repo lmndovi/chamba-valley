@@ -24,6 +24,7 @@ export default function ImageCarousel() {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
+        loop={true}
         keyboard={{
           enabled: true,
         }}
