@@ -27,7 +27,7 @@ const Header = () => {
     <div className="">
       <Image
         src={hero}
-        className={` w-full h-96 -z-20`}
+        className={` w-full h-96 lg:h-[400px] -z-20`}
         alt="Chamba Valley Tomatoes"
       />
       <div className="absolute top-0 left-0 w-full">

@@ -7,10 +7,10 @@ import HeroCards from "@/components/HeroCards";
 
 const about = () => {
   return (
-    <div>
+    <div className="mb-10">
       <div className="grid grid-cols-1 md:grid-cols-2 p-6 md:pt-28 md:gap-2">
-        <div className="p-4">
-          <div className="flex flex-col  p-5 space-y-3">
+        <div className="p-4 col-span-1 md:max-w-[600px]">
+          <div className="flex flex-col  p-5 space-y-5">
             <div className="">
               <h2 className="font-bold uppercase text-xs">About Us</h2>
               <h1 className="uppercase text-xl font-light">See What We Sell</h1>
@@ -19,26 +19,29 @@ const about = () => {
               </h1>
             </div>
             <div className="space-y-6">
-              <p className="text-sm">
-                When our tomatoes grow to size, they are sent to our on site
-                shop. We will have completed our job with care.
+              <p className="text-sm tracking-wider">
+                When you visit our farm, you witness the journey from field to
+                shop, ensuring that what you see is precisely what you get -
+                fresh, wholesome, and locally grown produce.
               </p>
-              <p className="text-xs">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
-                accusantium rerum voluptas neque aut libero tempora id molestias
-                non, at natus magnam impedit dolorem sequi est nemo delectus
-                earum similique?
+              <p className="text-xs tracking-widest">
+                Chamba Valley Farms, nestled in the picturesque Chamba Valley of
+                Lusaka, Zambia, is a longstanding family-owned agricultural
+                haven. Our story dates back to the 1970s when the visionary
+                Kelvin Siwale, former President of the Agricultural and
+                Commercial Cooperative Society of Zambia Limited, laid the
+                foundation for what is now a flourishing local farm.
               </p>
-              <p className="text-xs">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                blanditiis quasi, asperiores vel doloremque et magnam suscipit
-                consectetur laudantium reprehenderit corporis eos illo nobis,
-                voluptates, temporibus quod sit id earum?
+              <p className="text-xs tracking-widest">
+                At Chamba Valley Farms, we take pride in providing our community
+                with the freshest produce, specializing in succulent tomatoes.
+                But we don't stop there; our fields also yield a bounty of
+                cabbage, spinach, carrots, and an array of other quality crops.
               </p>
             </div>
-            <Link href="/stock">
+            <Link href="/shop">
               <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs">
-                Contact
+                Shop
               </button>
             </Link>
           </div>
@@ -47,16 +50,26 @@ const about = () => {
           <Image src={veg} alt="Vegetables" className="rounded-lg h-96 w-fit" />
         </div>
       </div>
-      <div className="flex flex-col mx-auto py-10 h-96 w-96 space-y-5">
-        <h1 className="uppercase text-xl font-medium text-center text-[#dc0d0d]">
-          Community Service
-        </h1>
-        <p className="text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          cumque delectus, eligendi nulla obcaecati maiores soluta, libero quas
-          explicabo deserunt consectetur in eos ipsum veritatis! Reiciendis
-          accusantium iste doloribus excepturi.
-        </p>
+      <div className="flex flex-col py-10 h-96 w-fit md:w-[600px] mx-auto border-t-2 border-[#dc0d0d]">
+        <section className="mx-auto w-96 flex-col space-y-6">
+          <h1 className="uppercase text-xl font-medium text-center tracking-widest">
+            Community Service
+          </h1>
+          <p className="text-sm tracking-wider">
+            Education is at the heart of our community initiatives. We believe
+            that every child deserves access to quality education, and that's
+            why we provide books and uniforms to local children. Our support
+            helps remove barriers to learning and empowers the youth to reach
+            for their dreams.
+          </p>
+          <p className="text-sm tracking-wider">
+            Furthermore, we actively encourage and support our dedicated
+            workforce to broaden their horizons. Two of our former employees
+            have achieved remarkable success, one becoming a police officer and
+            the other a nurse. Their achievements inspire us to continue
+            fostering growth and development within our community.
+          </p>
+        </section>
       </div>
     </div>
   );

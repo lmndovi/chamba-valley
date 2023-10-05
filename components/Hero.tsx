@@ -5,23 +5,23 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="text-center mt-20 space-y-1 p-5">
+    <div className="text-center mt-20 space-y-3 p-5">
       <div>
-        <h2 className="uppercase text-sm font-bold text-[#DC0D0D] ">
+        <h2 className="uppercase text-sm font-bold text-[#DC0D0D] tracking-wide">
           What We Do
         </h2>
       </div>
       <div className="">
-        <h1 className="text-2xl uppercase mb-5">
-          <span className="font-bold">Tomato Farm Using High Technology</span>
+        <h1 className="text-2xl uppercase mb-5 tracking-wide">
+          <span className="font-bold">Here At Chamba Valley Farms</span>
           <br />
-          And Solar Energy System
+          we are not just farming
         </h1>
       </div>
       <div>
-        <p className="text-xs">
-          We are a local farm specialising in modern environmentally friendly
-          farming
+        <p className="text-sm w-72 mx-auto tracking-wide">
+          we're sowing seeds of opportunity and nurturing a brighter future for
+          our neighbors
         </p>
       </div>
       <div className="flex flex-col mx-auto py-10 h-96 w-full md:w-[600px] md:object-fit">
