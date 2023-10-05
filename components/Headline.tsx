@@ -13,7 +13,6 @@ const Headline = () => {
         <h1 className="uppercase tracking-tight text-2xl">
           We Locally Grow
           <span className="font-bold">
-            {" "}
             <br /> Healthy Tomatoes
           </span>
         </h1>
@@ -21,7 +20,7 @@ const Headline = () => {
       <div>
         <Link href="/stock">
           <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs">
-            This Week's Stock
+            This Week&apos;s Stock
           </button>
         </Link>
       </div>

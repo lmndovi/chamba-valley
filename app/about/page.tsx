@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import veg from "@/assets/veg-2.jpg";
-import ImageCarousel from "@/components/carousel/ImageCarousel";
-import HeroCards from "@/components/HeroCards";
 
 const about = () => {
   return (
@@ -15,7 +13,7 @@ const about = () => {
               <h2 className="font-bold uppercase text-xs">About Us</h2>
               <h1 className="uppercase text-xl font-light">See What We Sell</h1>
               <h1 className="text-[#DC0D0D] uppercase font-bold text-xl -ml-1">
-                "Healthy Tomatoes"
+                &ldquo;Healthy Tomatoes&rdquo;
               </h1>
             </div>
             <div className="space-y-6">
@@ -35,7 +33,7 @@ const about = () => {
               <p className="text-xs tracking-widest">
                 At Chamba Valley Farms, we take pride in providing our community
                 with the freshest produce, specializing in succulent tomatoes.
-                But we don't stop there; our fields also yield a bounty of
+                But we don&apos;t stop there; our fields also yield a bounty of
                 cabbage, spinach, carrots, and an array of other quality crops.
               </p>
             </div>
@@ -57,10 +55,10 @@ const about = () => {
           </h1>
           <p className="text-sm tracking-wider">
             Education is at the heart of our community initiatives. We believe
-            that every child deserves access to quality education, and that's
-            why we provide books and uniforms to local children. Our support
-            helps remove barriers to learning and empowers the youth to reach
-            for their dreams.
+            that every child deserves access to quality education, and
+            that&apos;s why we provide books and uniforms to local children. Our
+            support helps remove barriers to learning and empowers the youth to
+            reach for their dreams.
           </p>
           <p className="text-sm tracking-wider">
             Furthermore, we actively encourage and support our dedicated

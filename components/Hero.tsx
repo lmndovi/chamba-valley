@@ -1,5 +1,5 @@
 import React from "react";
-import HeroCards from "./HeroCards";
+
 import ImageCarousel from "./carousel/ImageCarousel";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ const Hero = () => {
           What We Do
         </h2>
       </div>
-      <div className="">
+      <div>
         <h1 className="text-2xl uppercase mb-5 tracking-wide">
           <span className="font-bold">Here At Chamba Valley Farms</span>
           <br />
@@ -20,8 +20,8 @@ const Hero = () => {
       </div>
       <div>
         <p className="text-sm w-72 mx-auto tracking-wide">
-          we're sowing seeds of opportunity and nurturing a brighter future for
-          our neighbors
+          we&apos;re sowing seeds of opportunity and nurturing a brighter future
+          for our neighbors
         </p>
       </div>
       <div className="flex flex-col mx-auto py-10 h-96 w-full md:w-[600px] md:object-fit">
