@@ -1,8 +1,8 @@
 import { frederickaTheGreat } from "@/fonts";
 import Image from "next/image";
 import React from "react";
-import CropList from "./CropList";
-import { Crop, Vegetable } from "@/types";
+
+import { Vegetable } from "@/types";
 
 type VegetableListProps = {
   vegetables: Vegetable[];
@@ -35,7 +35,7 @@ const VegetableList: React.FC<VegetableListProps> = ({ vegetables }) => {
                   <span className=" uppercase">{vegetable.name}</span>
                 </div>
 
-                <span className="text-lg">
+                <span className="text-lg tracking-wide">
                   ZMW {vegetable.price.toFixed(2)}
                 </span>
               </li>

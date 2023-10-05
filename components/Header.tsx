@@ -68,7 +68,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className={`${isOpen ? "hidden" : ""}`}>
+        <div className={`${isOpen ? "hidden" : ""} mt-10`}>
           <Headline />
         </div>
       </div>
