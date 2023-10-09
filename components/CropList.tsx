@@ -11,7 +11,7 @@ const CropList: React.FC<CropListProps> = ({ crops }) => {
   return (
     <div className={frederickaTheGreat.className}>
       <section className="mb-5 text-white">
-        <h3 className="text-white text-center text-xl underline">
+        <h3 className="text-white text-center text-2xl underline mb-5">
           Preparing in the field
         </h3>
         <ul className="text-white px-24">
@@ -30,8 +30,8 @@ const CropList: React.FC<CropListProps> = ({ crops }) => {
                 <span className=" uppercase">{crop.name}</span>
               </div>
 
-              <span className="text-lg">
-                Harvest Date: {crop.harvestDate.toLocaleDateString()}
+              <span className="text-lg flex">
+                {crop.harvestDate.toLocaleDateString()}
               </span>
             </li>
           ))}

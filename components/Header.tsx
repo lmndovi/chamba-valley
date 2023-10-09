@@ -33,7 +33,7 @@ const Header = () => {
       <div className="absolute top-0 left-0 w-full">
         <div
           className={`md:flex-row md:justify-between md:p-5  md:items-center flex flex-col ${
-            isOpen ? "bg-white bg-opacity-50" : ""
+            isOpen ? "bg-white bg-opacity-50 md:bg-opacity-0" : ""
           }`}
         >
           <Logo />
@@ -47,7 +47,7 @@ const Header = () => {
               )}
             </div>
             <ul
-              className={`md:flex space-x-5 md:items-center text-m md:text-xs font-semibold w-full left-0 py-3 pl-7 md:pl-0 uppercase md:py-0 transition-all duration-200 ease-in-out ${
+              className={`md:flex space-x-5 md:items-center text-m md:text-xs font-semibold w-full  py-3 pl-7 md:pl-0 uppercase md:py-0 transition-all duration-200 ease-in-out ${
                 !isOpen ? "hidden" : "top-0"
               }`}
             >

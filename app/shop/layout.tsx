@@ -15,14 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
-        <div>
-          <div className="flex md:flex-row justify-between p-5  items-center">
-            <div className="absolute top-8 left-0">
-              <Logo />
-            </div>
-            <div className="md:absolute top-3 md:top-0 right-4">
-              <Navbar />
-            </div>
+        <div className="flex flex-col md:flex-row justify-between p-5 items-center">
+          <div className="md:absolute absolute top-0 left-0 md:p-5">
+            <Logo />
+          </div>
+          <div className="md:ml-auto md:absolute md:-top-8 right-0 md:mr-3 md:p-5">
+            <Navbar />
           </div>
         </div>
         {children}

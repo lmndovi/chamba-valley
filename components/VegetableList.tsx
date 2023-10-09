@@ -12,11 +12,11 @@ const VegetableList: React.FC<VegetableListProps> = ({ vegetables }) => {
   return (
     <div className={frederickaTheGreat.className}>
       <div>
-        <h2 className="text-[60px] font-semibold text-white tracking-[10px] text-center -mt-16 mb-16">
-          Farm Shop
+        <h2 className="text-[60px]  text-white tracking-widest text-center -mt-16 mb-10 uppercase">
+          Stock
         </h2>
         <section className="mb-5">
-          <h3 className="text-white text-center text-xl underline">
+          <h3 className="text-white text-center text-2xl underline mb-5">
             Currently In Stock
           </h3>
           <ul className="text-white px-24">
@@ -35,8 +35,8 @@ const VegetableList: React.FC<VegetableListProps> = ({ vegetables }) => {
                   <span className=" uppercase">{vegetable.name}</span>
                 </div>
 
-                <span className="text-lg tracking-wide">
-                  ZMW {vegetable.price.toFixed(2)}
+                <span className="text-sm tracking-wide flex">
+                  <p className="mr-2">ZMW </p> {vegetable.price.toFixed(2)}
                 </span>
               </li>
             ))}

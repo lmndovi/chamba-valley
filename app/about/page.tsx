@@ -38,7 +38,7 @@ const about = () => {
               </p>
             </div>
             <Link href="/shop">
-              <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs">
+              <button className="bg-[#DC0D0D] px-3 py-1 rounded-xl text-white text-xs font-bold">
                 Shop
               </button>
             </Link>

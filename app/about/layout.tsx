@@ -17,10 +17,10 @@ export default function RootLayout({
       <body className="">
         <div>
           <div className="flex md:flex-row justify-between p-5  items-center">
-            <div className="absolute top-8 left-0">
+            <div className="absolute top-0 left-0">
               <Logo />
             </div>
-            <div className="md:absolute top-3 md:top-0 right-4">
+            <div className="  md:top-0 right-4">
               <Navbar />
             </div>
           </div>
